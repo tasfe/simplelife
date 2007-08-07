@@ -18,6 +18,7 @@ package com.googlecode.simplelife.dao;
 /**
  * 
  * @author Marshal Wu
+ * 
  * $Id$
  */
 public abstract class DaoUtil {
