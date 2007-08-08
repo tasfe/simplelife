@@ -21,9 +21,12 @@ import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 import com.googlecode.simplelife.dao.Pagination;
 
 /**
+ * ProductService测试
  * 
  * @author Marshal Wu
- *
+ * 
+ * $Id$
+ * 
  */
 public class ProductServiceTest extends
 		AbstractDependencyInjectionSpringContextTests {
@@ -81,12 +84,12 @@ public class ProductServiceTest extends
 		product.setName("%%");
 		product.setVendor("v1");
 		this.productService.save(product);
-		
+
 		product = new Product();
 		product.setName("!");
 		product.setVendor("v2");
 		this.productService.save(product);
-		
+
 		product = new Product();
 		product.setName("_");
 		product.setVendor("v2");
@@ -102,7 +105,7 @@ public class ProductServiceTest extends
 
 		this.productService.browse(pagination);
 		assert pagination.getRecordSum() == 2;
-		
+
 		// 查询product.name为%, product.vendor为v
 		product = new Product();
 		product.setName("%");
@@ -110,10 +113,10 @@ public class ProductServiceTest extends
 		pagination.setNo(1);
 		pagination.setSize(3);
 		pagination.setConditon(product);
-		
+
 		this.productService.browse(pagination);
 		assert pagination.getRecordSum() == 2;
-		
+
 		// 查询product.name为%%, product.vendor为v
 		product = new Product();
 		product.setName("%%");
@@ -121,37 +124,37 @@ public class ProductServiceTest extends
 		pagination.setNo(1);
 		pagination.setSize(3);
 		pagination.setConditon(product);
-		
+
 		this.productService.browse(pagination);
 		assert pagination.getRecordSum() == 1;
-		
+
 		// 查询product.name为p
 		product = new Product();
 		product.setName("p");
 		pagination.setNo(1);
 		pagination.setSize(3);
 		pagination.setConditon(product);
-		
+
 		this.productService.browse(pagination);
 		assert pagination.getRecordSum() == 1;
-		
+
 		// 查询product.name为_
 		product = new Product();
 		product.setName("_");
 		pagination.setNo(1);
 		pagination.setSize(3);
 		pagination.setConditon(product);
-		
+
 		this.productService.browse(pagination);
 		assert pagination.getRecordSum() == 1;
-		
+
 		// 查询product.name为!
 		product = new Product();
 		product.setName("!");
 		pagination.setNo(1);
 		pagination.setSize(3);
 		pagination.setConditon(product);
-		
+
 		this.productService.browse(pagination);
 		assert pagination.getRecordSum() == 1;
 

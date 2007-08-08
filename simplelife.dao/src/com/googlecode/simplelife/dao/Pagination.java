@@ -21,6 +21,8 @@ import java.util.List;
  * 分页对象.
  * 
  * @author Marshal Wu
+ * 
+ * $Id$
  */
 public class Pagination<T> {
 	

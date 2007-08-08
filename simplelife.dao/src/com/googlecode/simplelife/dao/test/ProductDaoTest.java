@@ -5,6 +5,13 @@ import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 
 import com.googlecode.simplelife.dao.Pagination;
 
+/**
+ * ProductDao的测试类
+ * 
+ * @author Marshal Wu
+ * 
+ * $Id$
+ */
 public class ProductDaoTest extends
 		AbstractDependencyInjectionSpringContextTests {
 

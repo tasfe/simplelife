@@ -22,36 +22,43 @@ import java.io.Serializable;
  * 
  * 一般不单独使用, 通过继承使用.
  * 
- * @param <T>  * @param <PK>  * 
+ * @param <T>
+ * @param <PK>
  * @author Marshal Wu
+ * 
+ * $Id$
  */
 public interface Dao<T, PK extends Serializable> {
-	
+
 	/**
 	 * 创建对象.
 	 * 
-	 * @param entity the entity
+	 * @param entity
+	 *            the entity
 	 */
 	public void create(T entity);
 
 	/**
 	 * 创建或更新对象.
 	 * 
-	 * @param entity the entity
+	 * @param entity
+	 *            the entity
 	 */
 	public void saveOrUpdate(T entity);
 
 	/**
 	 * 更新对象.
 	 * 
-	 * @param entity the entity
+	 * @param entity
+	 *            the entity
 	 */
 	public void update(T entity);
 
 	/**
 	 * 通过id得到对象.
 	 * 
-	 * @param id the id
+	 * @param id
+	 *            the id
 	 * 
 	 * @return the T
 	 */
@@ -60,14 +67,16 @@ public interface Dao<T, PK extends Serializable> {
 	/**
 	 * 删除对象.
 	 * 
-	 * @param entity the entity
+	 * @param entity
+	 *            the entity
 	 */
 	public void delete(T entity);
 
 	/**
 	 * 分页浏览.
 	 * 
-	 * @param pagination the pagination
+	 * @param pagination
+	 *            the pagination
 	 */
 	public void browse(Pagination<T> pagination);
 }
