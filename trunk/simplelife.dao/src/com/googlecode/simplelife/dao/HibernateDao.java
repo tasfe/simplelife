@@ -26,13 +26,14 @@ import org.hibernate.criterion.Projections;
 import org.springframework.orm.hibernate3.HibernateCallback;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
-
 /**
  * Hibernate与Spring集成的Dao实现.
  * 
- * @param <T>  
- * @param <PK> 
+ * @param <T>
+ * @param <PK>
  * @author Marshal Wu
+ * 
+ * $Id$
  */
 public class HibernateDao<T, PK extends Serializable> extends
 		HibernateDaoSupport implements Dao<T, PK> {
@@ -44,8 +45,10 @@ public class HibernateDao<T, PK extends Serializable> extends
 	/**
 	 * Browse.
 	 * 
-	 * @param criteriaCallBack the criteria call back
-	 * @param pagination the pagination
+	 * @param criteriaCallBack
+	 *            the criteria call back
+	 * @param pagination
+	 *            the pagination
 	 */
 	@SuppressWarnings("unchecked")
 	protected void browse(final Pagination<T> pagination,
@@ -96,7 +99,9 @@ public class HibernateDao<T, PK extends Serializable> extends
 
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.googlecode.simplelife.dao.Dao#browse(com.googlecode.simplelife.dao.Pagination)
 	 */
 	@SuppressWarnings("unchecked")
@@ -117,14 +122,18 @@ public class HibernateDao<T, PK extends Serializable> extends
 		this.browse(pagination, criteriaCallBack);
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.googlecode.simplelife.dao.Dao#delete(java.lang.Object)
 	 */
 	public void delete(T entity) {
 		this.getHibernateTemplate().delete(entity);
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.googlecode.simplelife.dao.Dao#findById(java.io.Serializable)
 	 */
 	@SuppressWarnings("unchecked")
@@ -132,21 +141,27 @@ public class HibernateDao<T, PK extends Serializable> extends
 		return (T) this.getHibernateTemplate().get(type, id);
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.googlecode.simplelife.dao.Dao#create(java.lang.Object)
 	 */
 	public void create(T entity) {
 		this.getHibernateTemplate().save(entity);
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.googlecode.simplelife.dao.Dao#update(java.lang.Object)
 	 */
 	public void update(T entity) {
 		this.getHibernateTemplate().update(entity);
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.googlecode.simplelife.dao.Dao#saveOrUpdate(java.lang.Object)
 	 */
 	public void saveOrUpdate(T entity) {
@@ -156,7 +171,8 @@ public class HibernateDao<T, PK extends Serializable> extends
 	/**
 	 * Sets the type.
 	 * 
-	 * @param type the type
+	 * @param type
+	 *            the type
 	 */
 	@SuppressWarnings("unchecked")
 	public void setType(Class type) {

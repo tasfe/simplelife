@@ -21,6 +21,8 @@ import org.hibernate.Criteria;
  * 设置条件的回调接口.
  * 
  * @author Marshal Wu
+ *
+ * $Id$
  */
 public interface CriteriaCallBack {
 	

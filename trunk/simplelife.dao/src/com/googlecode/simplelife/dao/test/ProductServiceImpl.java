@@ -25,6 +25,12 @@ import com.googlecode.simplelife.dao.CriteriaCallBack;
 import com.googlecode.simplelife.dao.DaoUtil;
 import com.googlecode.simplelife.dao.Pagination;
 
+/**
+ * 
+ * @author Marshal Wu
+ *
+ * $Id$
+ */
 public class ProductServiceImpl implements ProductService {
 
 	private ProductDao productDao;

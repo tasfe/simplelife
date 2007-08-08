@@ -1,5 +1,12 @@
 package com.googlecode.simplelife.dao.test;
 
+/**
+ * 商品
+ * 
+ * @author Marshal Wu
+ * 
+ * $Id$
+ */
 public class Product {
 	private String name;
 
