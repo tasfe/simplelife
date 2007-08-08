@@ -21,22 +21,30 @@ import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
 import com.googlecode.simplelife.dao.Pagination;
 
 /**
- * ProductService测试
+ * ProductService测试.
  * 
  * @author Marshal Wu
  * 
  * $Id$
- * 
  */
 public class ProductServiceTest extends
 		AbstractDependencyInjectionSpringContextTests {
 
+	/** The product service. */
 	private ProductService productService;
 
+	/**
+	 * Sets the product service.
+	 * 
+	 * @param productService the product service
+	 */
 	public void setProductService(ProductService productService) {
 		this.productService = productService;
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.test.AbstractSingleSpringContextTests#getConfigLocations()
+	 */
 	@Override
 	protected String[] getConfigLocations() {
 		return new String[] { "classpath:com/googlecode/simplelife/dao/test/config.annotations.xml" };
