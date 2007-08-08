@@ -26,19 +26,29 @@ import com.googlecode.simplelife.dao.DaoUtil;
 import com.googlecode.simplelife.dao.Pagination;
 
 /**
+ * The Class ProductServiceImpl.
  * 
  * @author Marshal Wu
- *
+ * 
  * $Id$
  */
 public class ProductServiceImpl implements ProductService {
 
+	/** The product dao. */
 	private ProductDao productDao;
 
+	/**
+	 * Sets the product dao.
+	 * 
+	 * @param productDao the product dao
+	 */
 	public void setProductDao(ProductDao productDao) {
 		this.productDao = productDao;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.googlecode.simplelife.dao.test.ProductService#browse(com.googlecode.simplelife.dao.Pagination)
+	 */
 	@Override
 	@Transactional(readOnly = true, propagation = Propagation.SUPPORTS)
 	public void browse(final Pagination<Product> pagination) {
@@ -66,6 +76,9 @@ public class ProductServiceImpl implements ProductService {
 		this.productDao.browse(pagination);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.googlecode.simplelife.dao.test.ProductService#delete(java.lang.Long)
+	 */
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void delete(Long id) {
@@ -76,12 +89,18 @@ public class ProductServiceImpl implements ProductService {
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.googlecode.simplelife.dao.test.ProductService#findById(java.lang.Long)
+	 */
 	@Override
 	@Transactional(readOnly = true, propagation = Propagation.SUPPORTS)
 	public Product findById(Long id) {
 		return this.productDao.findById(id);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.googlecode.simplelife.dao.test.ProductService#save(com.googlecode.simplelife.dao.test.Product)
+	 */
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void save(Product product) {
