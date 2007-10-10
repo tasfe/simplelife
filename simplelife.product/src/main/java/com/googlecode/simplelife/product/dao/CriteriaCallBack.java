@@ -22,7 +22,9 @@ import org.hibernate.Criteria;
  * 
  * @author Marshal Wu
  * 
- * $Id$
+ * $LastChangedBy$ <br />
+ * $LastChangedDate$<br />
+ * $Rev$<br />
  */
 public interface CriteriaCallBack {
 

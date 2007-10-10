@@ -26,7 +26,7 @@ import com.googlecode.simplelife.product.business.ProductDao;
  * 
  * @author Marshal Wu
  * 
- * $Id$
+ * $Id: ProductDaoTest.java 11 2007-10-10 15:58:33Z marshal.wu $
  */
 public class ProductDaoTest extends
 		AbstractDependencyInjectionSpringContextTests {

@@ -36,6 +36,9 @@ import com.opensymphony.xwork2.ActionSupport;
  * 
  * @author Marshal Wu
  * 
+ * $LastChangedBy$ <br />
+ * $LastChangedDate$<br />
+ * $Rev$<br />
  */
 public class ProductAction extends ActionSupport {
 

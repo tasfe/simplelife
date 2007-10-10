@@ -23,7 +23,9 @@ import java.util.Date;
  * 
  * @author Marshal Wu
  * 
- * $Id$
+ * $LastChangedBy$ <br />
+ * $LastChangedDate$<br />
+ * $Rev$<br />
  */
 public class Product {
 	// ID

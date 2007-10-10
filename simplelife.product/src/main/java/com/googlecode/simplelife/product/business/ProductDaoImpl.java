@@ -22,7 +22,9 @@ import com.googlecode.simplelife.product.dao.HibernateDao;
  * 
  * @author Marshal Wu
  * 
- * $Id$
+ * $LastChangedBy$ <br />
+ * $LastChangedDate$<br />
+ * $Rev$<br />
  */
 public class ProductDaoImpl extends HibernateDao<Product, String> implements
 		ProductDao {

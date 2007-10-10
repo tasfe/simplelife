@@ -22,7 +22,9 @@ import java.util.List;
  * 
  * @author Marshal Wu
  * 
- * $Id$
+ * $LastChangedBy$ <br />
+ * $LastChangedDate$<br />
+ * $Rev$<br />
  */
 public class Pagination<T> {
 

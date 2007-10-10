@@ -18,11 +18,13 @@ package com.googlecode.simplelife.product.business;
 import com.googlecode.simplelife.product.dao.Dao;
 
 /**
- * 图片实体的DAO接口
+ * 照片实体DAO接口
  * 
  * @author Marshal Wu
  * 
- * $Id$
+ * $LastChangedBy$ <br />
+ * $LastChangedDate$<br />
+ * $Rev$<br />
  */
 public interface PhotoDao extends Dao<Photo, String> {
 	public void delete(Product product);
