@@ -22,6 +22,7 @@ import org.hibernate.Criteria;
  * 
  * @author Marshal Wu
  * 
+ * $Id$
  */
 public interface CriteriaCallBack {
 
