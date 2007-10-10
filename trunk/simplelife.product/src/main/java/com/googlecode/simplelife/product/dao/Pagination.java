@@ -21,9 +21,11 @@ import java.util.List;
  * 分页对象.
  * 
  * @author Marshal Wu
+ * 
+ * $Id$
  */
 public class Pagination<T> {
-	
+
 	/** The no. */
 	private int no;
 
@@ -57,7 +59,8 @@ public class Pagination<T> {
 	/**
 	 * Sets the conditon.
 	 * 
-	 * @param conditon the conditon
+	 * @param conditon
+	 *            the conditon
 	 */
 	public void setConditon(Object conditon) {
 		this.conditon = conditon;
@@ -80,7 +83,8 @@ public class Pagination<T> {
 	/**
 	 * Sets the no.
 	 * 
-	 * @param no the no
+	 * @param no
+	 *            the no
 	 */
 	public void setNo(int no) {
 		this.no = no;
@@ -98,7 +102,8 @@ public class Pagination<T> {
 	/**
 	 * Sets the record sum.
 	 * 
-	 * @param recordSum the record sum
+	 * @param recordSum
+	 *            the record sum
 	 */
 	public void setRecordSum(int recordSum) {
 		this.recordSum = recordSum;
@@ -116,7 +121,8 @@ public class Pagination<T> {
 	/**
 	 * Sets the results.
 	 * 
-	 * @param results the results
+	 * @param results
+	 *            the results
 	 */
 	public void setResults(List<T> results) {
 		this.results = results;
@@ -143,7 +149,8 @@ public class Pagination<T> {
 	/**
 	 * Sets the size.
 	 * 
-	 * @param size the size
+	 * @param size
+	 *            the size
 	 */
 	public void setSize(int size) {
 		this.size = size;
@@ -161,7 +168,8 @@ public class Pagination<T> {
 	/**
 	 * Sets the desc.
 	 * 
-	 * @param desc the desc
+	 * @param desc
+	 *            the desc
 	 */
 	public void setDesc(boolean desc) {
 		this.desc = desc;
@@ -215,7 +223,8 @@ public class Pagination<T> {
 	/**
 	 * Sets the order field name.
 	 * 
-	 * @param orderFieldName the order field name
+	 * @param orderFieldName
+	 *            the order field name
 	 */
 	public void setOrderFieldName(String orderFieldName) {
 		this.orderFieldName = orderFieldName;

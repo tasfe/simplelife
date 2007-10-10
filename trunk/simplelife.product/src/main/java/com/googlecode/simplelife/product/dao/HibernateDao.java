@@ -34,6 +34,8 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
  * @param <PK>
  *            主键类
  * @author Marshal Wu
+ * 
+ * $Id$
  */
 public abstract class HibernateDao<T, PK extends Serializable> extends
 		HibernateDaoSupport implements Dao<T, PK> {

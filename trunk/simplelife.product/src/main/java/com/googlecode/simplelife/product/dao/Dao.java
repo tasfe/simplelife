@@ -26,6 +26,8 @@ import java.io.Serializable;
  *            实体类
  * @param <PK>
  *            主键属性类
+ *          
+ *  $Id$
  */
 public interface Dao<T, PK extends Serializable> {
 
