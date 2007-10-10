@@ -35,7 +35,9 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
  *            主键类
  * @author Marshal Wu
  * 
- * $Id$
+ * $LastChangedBy$ <br />
+ * $LastChangedDate$<br />
+ * $Rev$<br />
  */
 public abstract class HibernateDao<T, PK extends Serializable> extends
 		HibernateDaoSupport implements Dao<T, PK> {

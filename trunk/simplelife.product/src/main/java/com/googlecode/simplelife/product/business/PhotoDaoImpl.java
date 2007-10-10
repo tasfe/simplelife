@@ -29,7 +29,9 @@ import com.googlecode.simplelife.product.dao.HibernateDao;
  * 
  * @author Marshal Wu
  * 
- * $Id$
+ * $LastChangedBy$ <br />
+ * $LastChangedDate$<br />
+ * $Rev$<br />
  */
 public class PhotoDaoImpl extends HibernateDao<Photo, String> implements
 		PhotoDao {

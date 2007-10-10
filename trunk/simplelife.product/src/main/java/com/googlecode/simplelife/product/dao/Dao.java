@@ -27,7 +27,9 @@ import java.io.Serializable;
  * @param <PK>
  *            主键属性类
  *          
- *  $Id$
+ * $LastChangedBy$ <br />
+ * $LastChangedDate$<br />
+ * $Rev$<br />
  */
 public interface Dao<T, PK extends Serializable> {
 

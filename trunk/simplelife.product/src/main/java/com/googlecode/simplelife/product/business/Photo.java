@@ -20,7 +20,9 @@ package com.googlecode.simplelife.product.business;
  * 
  * @author Marshal Wu
  * 
- * $Id$
+ * $LastChangedBy$ <br />
+ * $LastChangedDate$<br />
+ * $Revision$<br />
  */
 public class Photo {
 	private String id;

@@ -22,7 +22,9 @@ import com.googlecode.simplelife.product.dao.Dao;
  * 
  * @author Marshal Wu
  * 
- * $Id$
+ * $LastChangedBy$ <br />
+ * $LastChangedDate$<br />
+ * $Rev$<br />
  */
 public interface ProductDao extends Dao<Product, String> {
 
