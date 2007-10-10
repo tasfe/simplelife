@@ -1,0 +1,117 @@
+h1#page_title {
+	font-size: 2em;
+	color: navy;
+	border-left-style: solid;
+	border-left-width: 0.7em;
+	border-bottom-style: dashed;
+	border-bottom-color: silver;
+	border-bottom-width: 1px;
+	padding-left: 0.2em;
+	height: 1.5em;
+}
+
+.property_title {
+	color: black;
+	font-weight: bolder;
+}
+
+.product {
+	font-size: 0.8em;
+	border-bottom-color: silver;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+
+.product_name {
+	font-size: 1.4em;
+	color: maroon;
+}
+
+.pagination {
+	font-size: 0.9em;
+	margin: 0;
+	padding: 0;
+}
+
+.pagination ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 1em;
+	padding-bottom: 0.8em;
+	display: block;
+}
+
+.pagination ul li {
+	float: left;
+	padding: 0 0.2em;
+}
+
+.pagination ul a {
+	padding: 0 1em;
+}
+
+.pagination li a:hover {
+	background-color: silver;
+	color: teal;
+}
+
+#content {
+	width: 720px;
+	margin: 0 auto;
+}
+
+#body {
+	clear: both;
+	margin-top: 2em;
+	padding-bottom: 0.75em;
+	margin-bottom: 1.5em;
+}
+
+#header {
+	margin-bottom: 5px;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: silver;
+}
+
+#header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+#header ul li {
+	margin-left: 0;
+	padding: 0 0.2em;
+	display: inline;
+}
+
+#footer {
+	clear: both;
+	padding: 0.75em;
+	margin-top: 1.5em;
+	border-top: dashed silver 1px;
+	text-align: center;
+	color: gray;
+}
+
+.product_context_menu {
+	margin: 0;
+	padding: 0;
+}
+
+.product_context_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.product_context_menu ul li{
+	margin-left: 0;
+	padding: 0 0.2em;
+	display: inline;
+}

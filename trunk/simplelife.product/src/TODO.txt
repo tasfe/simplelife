@@ -1,0 +1,10 @@
+遗留问题:
+
+ - 因为如果不填图片提交(IE/Firefox), Struts2报异常, 是Struts2的bug(https://issues.apache.org/struts/browse/WW-1911), 等待下一个版本2.0.10发布后解决.
+
+计划后续版本完成:
+
+ - 商品和照片1:n
+ - 厂商通过AJAX自动完成
+ - 增加树型结构的商品分类
+ - Form表单快捷键
