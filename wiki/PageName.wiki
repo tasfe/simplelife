@@ -1,6 +1,6 @@
 = Simple Life项目 =
 
-'''欢迎访问SimpleLife项目主页.'''
+*欢迎访问SimpleLife项目主页.*
 
 
 
