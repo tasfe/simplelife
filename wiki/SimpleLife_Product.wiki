@@ -58,3 +58,19 @@ mvn package
 执行后生成target目录, 和src并列.
 
 target目录下的simplelife.product.war可以部署到tomcat等服务器中执行.
+
+==== 运行 ====
+
+可以跳过上面编译, 直接运行web应用, 不需要安装配置数据库和web服务器.
+
+这里会自动安装web应用服务器, 编译系统并执行.
+
+_*执行前请检查8080端口是否可用, 这里需要使用该端口.*_
+
+在命令行simplelife目录下, 输入:
+
+{{{
+mvn jetty:run
+}}}
+
+然后通过浏览器访问: http://localhost:8080/simplelife.product
