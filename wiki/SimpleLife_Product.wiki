@@ -15,15 +15,10 @@
 === 准备工作 ===
 
  # 安装JDK 1.6.0及以上版本;
-
  # 安装subversion, 下载地址: http://subversion.tigris.org/files/documents/15/39559/svn-1.4.5-setup.exe
-
  # 安装maven, 下载地址: http://www.apache.org/dyn/closer.cgi/maven/binaries/maven-2.0.7-bin.zip, 解压缩
-
  # 配置maven, 将maven/bin目录设置到windows环境变量Path中
-
  # 检查maven是否安装成功, 在命令行中执行
-
  {{{
 mvn -version
  }}}
