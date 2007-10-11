@@ -1,0 +1,5 @@
+#summary One-sentence summary of this page.
+
+= Simple Life =
+
+Simple Life == ~~简单生活.~~
