@@ -1,0 +1,17 @@
+#summary SimpleLife.Product项目首页
+
+= SimpleLife.Product项目 =
+
+== 简介 ==
+
+实现简单的商品管理(增/删/改/查)功能.
+
+使用Java多项技术, 包含Hibernate3.2/Spring2.0/Struts2.0等.
+
+通过Maven自动构建, 简化开发和部署等.
+
+== 下载和构建 ==
+
+=== 准备工作 ===
+
+# 安装JDK 1.6.0及以上版本;
