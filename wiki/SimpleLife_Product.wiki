@@ -17,8 +17,44 @@
  # 安装JDK 1.6.0及以上版本;
  # 安装subversion, 下载地址: http://subversion.tigris.org/files/documents/15/39559/svn-1.4.5-setup.exe
  # 安装maven, 下载地址: http://www.apache.org/dyn/closer.cgi/maven/binaries/maven-2.0.7-bin.zip, 解压缩
+ # 检查subversion安装是否成功:
+{{{
+svn --version
+}}}
  # 配置maven, 将maven/bin目录设置到windows环境变量Path中
  # 检查maven是否安装成功, 在命令行中执行
 {{{
 mvn -version
 }}}
+
+=== 下载源代码 ===
+
+打开命令行, 进入某个目录(,,源代码将下载到该目录下,,)
+
+输入如下命令:
+
+{{{
+svn checkout http://simplelife.googlecode.com/svn/trunk/simplelife.product
+}}}
+
+运行结束后, 在该目录下, 会有一个simplelife.product目录, 源代码在simplelife.product/src目录下
+
+=== 编译和运行 ===
+
+==== 前提条件 ====
+
+因为下面编译过程会自动从互联网下载依赖的类库, 所以必须联网才能执行下面过程.
+
+==== 编译 ====
+
+在命令行simplelife目录下, 输入:
+
+{{{
+mvn package
+}}}
+
+如果是第一次执行, 下载依赖类库需要很多时间, 以后将使用本地库.
+
+执行后生成target目录, 和src并列.
+
+target目录下的simplelife.product.war可以部署到tomcat等服务器中执行.
