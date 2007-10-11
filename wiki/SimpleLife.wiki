@@ -2,4 +2,4 @@
 
 = Simple Life =
 
-Simple Life == ~~简单生活.~~
+Simple Life == _简单生活._
