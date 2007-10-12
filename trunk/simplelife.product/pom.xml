@@ -18,7 +18,7 @@
 	<name>simplelife.product</name>
 	<version>0.1.0</version>
 	<description>
-		é€šè¿‡å®ç°å•†å“çš„ç®¡ç†æ¼”ç¤ºStrut2, Hibernate3.2å’ŒSpring2çš„åŸºæœ¬ä½¿ç”¨.
+		Í¨¹ıÊµÏÖÉÌÆ·µÄ¹ÜÀíÑİÊ¾Strut2, Hibernate3.2ºÍSpring2µÄ»ù±¾Ê¹ÓÃ.
 	</description>
 	<url>http://simplelife.googlecode.com</url>
 	<inceptionYear>2007</inceptionYear>
@@ -28,8 +28,8 @@
 			<name>Marshal Wu</name>
 			<email>marshal.wu@gmail.com</email>
 			<roles>
-				<role>è®¾è®¡</role>
-				<role>å¼€å‘</role>
+				<role>Éè¼Æ</role>
+				<role>¿ª·¢</role>
 			</roles>
 			<timezone>+8</timezone>
 		</developer>
