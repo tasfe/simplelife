@@ -75,6 +75,52 @@ mvn jetty:run
 
 然后通过浏览器访问: http://localhost:8080/simplelife.product
 
+＝＝＝＝ 可能出现的问题和解决办法 ＝＝＝＝
+
+如果在执行上述任务中出现以下提示：
+
+{{{
+...
+
+[INFO] Failed to resolve artifact.
+
+Missing:
+----------
+1) javax.transaction:jta:jar:1.0.1B
+
+  Try downloading the file manually from:
+      http://java.sun.com/products/jta
+
+  Then, install it using the command:
+      mvn install:install-file -DgroupId=javax.transaction -DartifactId=jta \
+          -Dversion=1.0.1B -Dpackaging=jar -Dfile=/path/to/file
+Alternatively, if you host your own repository you can deploy the file there:
+    mvn deploy:deploy-file -DgroupId=javax.transaction -DartifactId=jta \
+          -Dversion=1.0.1B -Dpackaging=jar -Dfile=/path/to/file \
+           -Durl=[url] -DrepositoryId=[id]
+
+  Path to dependency:
+        1) simplelife.googlecode.com:simplelife.product:war:0.1.0
+        2) javax.transaction:jta:jar:1.0.1B
+
+...
+}}}
+
+提示说的很清楚，因为缺少jta包，这个需要手工下载和安装。
+
+简易的办法是：
+
+ * 通过http://java.sun.com/products/jta网页提示的链接找到1.0.1b版本下载”jta-1_0_1B-classes.zip“文件
+
+ * 将下载的文件改名为jta-1.0.1B.jar
+
+ * 找到maven的“.m2”目录，一般在C:\Documents and Settings\你的用户名目录下
+
+ * 找到”.m2“目录下的”repository\javax\transaction\jta\1.0.1B“目录
+
+ * 将改名后的jta-1.0.1B.jar文件复制到上述”repository\javax\transaction\jta\1.0.1B“目录下
+
+
 == 开发者文档 ==
 
 以上是作为部署者和使用者需要执行的内容.
