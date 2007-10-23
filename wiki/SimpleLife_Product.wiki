@@ -75,7 +75,7 @@ mvn jetty:run
 
 然后通过浏览器访问: http://localhost:8080/simplelife.product
 
-＝＝＝＝ 可能出现的问题和解决办法 ＝＝＝＝
+==== 可能出现的问题和解决办法 ====
 
 如果在执行上述任务中出现以下提示：
 
