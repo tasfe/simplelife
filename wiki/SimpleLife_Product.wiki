@@ -110,7 +110,7 @@ Alternatively, if you host your own repository you can deploy the file there:
 
 简易的办法是：
 
- * 通过http://java.sun.com/products/jta网页提示的链接找到1.0.1b版本下载”jta-1_0_1B-classes.zip“文件
+ * 通过http://java.sun.com/products/jta 网页提示的链接找到1.0.1b版本下载”jta-1_0_1B-classes.zip“文件
 
  * 将下载的文件改名为jta-1.0.1B.jar
 
