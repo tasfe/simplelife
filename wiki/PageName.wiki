@@ -18,28 +18,78 @@
 
 = 详细过程 =
 
- * 下载ubuntu Server版本，链接是：http://mirror.rootguide.org/ubuntu-releases/gutsy/ubuntu-7.10-server-i386.iso
+== 下载和基本安装 ==
 
- * 基本安装，略
+ 下载ubuntu Server版本，链接是：http://mirror.rootguide.org/ubuntu-releases/gutsy/ubuntu-7.10-server-i386.iso
 
- * 更新source.list:
- {{{
+基本安装，略
+
+== 更新source.list ==
+
+{{{
 sudo apt-get update
- }}}
+}}}
 
- * 安装基本功能：
+== 安装基本功能 ==
+
  {{{
 sudo apt-get -y install autoconf libtool g++ make rcconf
  }}}
 
- * 启用和屏蔽root帐号，系统默认是屏蔽root帐号的，测试时为方便使用临时开放：
+== 启用和屏蔽root帐号 ==
 
-   * 启用root帐号
-   {{{
+启用和屏蔽root帐号，系统默认是屏蔽root帐号的，测试时为方便使用临时开放。
+
+启用root帐号：
+{{{
 sudo passwd root
-   }}}
+}}}
 
-    * 屏蔽root帐号：
-    {{{
+屏蔽root帐号：
+{{{
 sudo passwd -l root
-    }}}
+}}}
+
+切换到root帐号：
+{{{
+sudo -s -H
+}}}
+
+== SSH的安装 ==
+
+服务器端：
+
+{{{
+sudo apt-get install ssh
+}}}
+
+客户端，下载Secure Shell Client，免费软件，http://www.onlinedown.net/soft/20089.htm
+
+== 配置网络 ==
+
+暂略
+
+== samba的安装和配置 ==
+
+安装：
+{{{
+sudo apt-get install samba 
+sudo apt-get install smbfs
+}}}
+
+编辑配置文件：
+{{{
+sudo gedit /etc/samba/smb.conf
+}}}
+
+替代这一行: 
+
+{{{
+; security = user
+}}}
+
+为 
+{{{
+security = user 
+username map = /etc/samba/smbusers
+}}}
