@@ -109,3 +109,13 @@ force group = zhangsan
 available = yes 
 browseable = yes
 }}}
+
+创建用户：
+{{{
+sudo smbpasswd -a zhangsan
+}}}
+
+重启samba：
+{{{
+sudo smbd restart
+}}}
