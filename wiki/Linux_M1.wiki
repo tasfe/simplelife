@@ -119,3 +119,36 @@ sudo smbpasswd -a zhangsan
 {{{
 sudo smbd restart
 }}}
+
+== Java环境的安装和配置 ==
+
+安装：
+{{{
+sudo apt-get install sun-java6-jdk
+}}}
+
+设置JAVA_HOME：
+
+{{{
+sudo vim /etc/profile
+}}}
+
+在文件结尾加入：
+{{{
+export JAVA_HOME=/usr/lib/jvm/java-6-sun-1.6.0.00
+}}}
+
+== 安装tomcat ==
+
+安装：
+{{{
+sudo apt-get install tomcat5.5-webapps tomcat5.5-admin
+}}}
+
+默认访问端口为8180.
+
+配置JAVA_HOME，修改/etc/init.d/tomcat5.5:
+
+{{{
+export JAVA_HOME=/usr/lib/jvm/java-6-sun-1.6.0.00
+}}}
