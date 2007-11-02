@@ -1,0 +1,28 @@
+#summary Linux服务器环境m1版本
+
+= 介绍 =
+
+以下编写了一个linux服务器创建过程。
+
+使用的是ubuntu7.0.4，当前推出7.1.0版本，估计安装配置过程没有区别（有时间再做测试）。
+
+这个版本非常简单，只包含基本功能，供java开发人员使用和调试：
+
+ * linux基本功能；
+
+ * samba，用于为windows系统共享目录；
+
+ * java 1.6
+
+ * tomcat 5.5，系统启动时自动启动
+
+= 详细过程 =
+
+ * 下载ubuntu Server版本，链接是：http://mirror.rootguide.org/ubuntu-releases/gutsy/ubuntu-7.10-server-i386.iso
+
+ * 基本安装，略
+
+ * 更新source.list:
+ {{{
+sudo apt-get update
+ }}}
