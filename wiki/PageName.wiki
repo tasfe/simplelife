@@ -26,3 +26,20 @@
  {{{
 sudo apt-get update
  }}}
+
+ * 安装基本功能：
+ {{{
+sudo apt-get -y install autoconf libtool g++ make rcconf
+ }}}
+
+ * 启用和屏蔽root帐号，系统默认是屏蔽root帐号的，测试时为方便使用临时开放：
+
+    # 启用root帐号
+    {{{
+sudo passwd root
+    }}}
+
+    # 屏蔽root帐号：
+    {{{
+sudo passwd -l root
+    }}}
