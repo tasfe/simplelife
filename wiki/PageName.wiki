@@ -93,3 +93,19 @@ sudo gedit /etc/samba/smb.conf
 security = user 
 username map = /etc/samba/smbusers
 }}}
+
+将下面内容复制到该文件的尾部
+{{{
+[Share] 
+comment = Shared Folder with username and password 
+path = /home/zhangsan/share
+public = yes 
+#writable = yes
+valid users = zhangsan
+create mask = 0700 
+directory mask = 0700 
+force user = zhangsan
+force group = zhangsan
+available = yes 
+browseable = yes
+}}}
