@@ -1,0 +1,29 @@
+#summary One-sentence summary of this page.
+
+= 简介 =
+
+实现简单的用户信息管理功能（增/删/改/查）。
+
+演示Ant的基本使用。
+
+通过Ant构建，生成文档，打包和部署。
+
+= 下载和使用 =
+
+== 准备工作 ==
+
+安装jdk，并设置JAVA_HOME
+
+安装subversion, 下载地址: http://subversion.tigris.org/files/documents/15/39559/svn-1.4.5-setup.exe
+
+安装Ant，下载地址：http://ant.apache.org/
+
+配置Ant，在环境变量中加入ant的bin目录
+
+检查Ant是否安装成功：
+
+{{{
+ant -version
+}}}
+
+== 下载源代码 ==
