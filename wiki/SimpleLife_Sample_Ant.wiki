@@ -66,3 +66,20 @@ Main targets:
  war       生成war文件
 Default target: archive
 }}}
+
+输入以下命令对java文件打包：
+{{{
+ant
+}}}
+
+或者：
+{{{
+ant archive
+}}}
+
+清理中间数据，清除build和dist目录：
+{{{
+ant clean
+}}}
+
+其他暂略。
