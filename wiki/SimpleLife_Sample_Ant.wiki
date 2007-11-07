@@ -16,6 +16,12 @@
 
 安装subversion, 下载地址: http://subversion.tigris.org/files/documents/15/39559/svn-1.4.5-setup.exe
 
+检查subversion是否安装成功：
+
+{{{
+svn --version
+}}}
+
 安装Ant，下载地址：http://ant.apache.org/
 
 配置Ant，在环境变量中加入ant的bin目录
