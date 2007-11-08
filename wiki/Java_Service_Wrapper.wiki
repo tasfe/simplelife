@@ -5,3 +5,29 @@
 [svn_setup 安装svn]。
 
 [ant_setup 安装ant]。
+
+＝ 下载源代码 =
+
+命令行输入：
+
+{{{
+svn checkout http://simplelife.googlecode.com/svn/trunk/sample.wrapper
+}}}
+
+= 构建和执行 =
+
+命令行，进入sample.wrapper目录。
+
+输入：
+
+{{{
+ant
+}}}
+
+将生成dist目录，在dist目录下，运行：
+
+{{{
+wrapper wrapper.conf
+}}}
+
+这就是使用wrapper启动服务器的简单示例。
