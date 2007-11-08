@@ -2,6 +2,6 @@
 
 = 准备工作 =
 
-[svn 安装svn]。
+[svn_setup 安装svn]。
 
-安装ant。
+[ant_setup 安装ant]。
