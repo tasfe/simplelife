@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+	$LastChangedBy$
+	$LastChangedDate$
+	$Rev$
+-->
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.googlecode.simplelife.product.business">
+	<class name="Product" table="PRODUCTS">
+		<id name="id">
+			<generator class="uuid" />
+		</id>
+		<property name="name" not-null="true" />
+		<property name="vendor" />
+		<property name="price" />
+		<property name="createDate" />
+		<!-- 
+			<many-to-one name="photo" class="Photo" column="PHOTOS_ID"
+			not-found="ignore" cascade="all" />
+			更换
+			
+			<one-to-one name="photo" class="Photo" property-ref="product"
+			cascade="all" />
+		-->
+
+	</class>
+	<class name="Photo" table="PHOTOS">
+		<id name="id">
+			<generator class="uuid" />
+		</id>
+		<property name="title" />
+		<property name="description" />
+		<property name="data"
+			type="org.springframework.orm.hibernate3.support.BlobByteArrayType"  length="1024000"/>
+
+		<many-to-one name="product" class="Product" column="PRODUCTS_ID"
+			unique="true" />
+
+	</class>
+</hibernate-mapping>
+

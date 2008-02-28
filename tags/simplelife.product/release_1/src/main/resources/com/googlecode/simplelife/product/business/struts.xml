@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	$LastChangedBy$
+	$LastChangedDate$
+	$Rev$
+-->
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<constant name="struts.messages.error.uploading" value="上传文件错误." />
+	<constant name="struts.messages.error.file.too.large"
+		value="上传文件过长." />
+	<constant name="struts.messages.error.content.type.not.allowed"
+		value="上传文件的类型不被许可." />
+
+	<package name="product" namespace="/" extends="tiles-default">
+		<global-results>
+			<result name="productNotFound">
+				/WEB-INF/product/product.not.found.jsp
+			</result>
+		</global-results>
+		<action name="input">
+			<result type="tiles">input</result>
+		</action>
+		<action name="save" class="productAction" method="save">
+			<interceptor-ref name="fileUpload">
+				<param name="allowedTypes">
+					image/bmp,image/png,image/gif,image/jpeg,image/x-png,image/pjpeg,application/octet-stream
+				</param>
+				<param name="maximumSize">1024000</param>
+			</interceptor-ref>
+			<interceptor-ref name="validationWorkflowStack" />
+			<result name="success" type="redirect">
+				detail.action?id=${product.id}
+			</result>
+			<result name="input" type="tiles">input</result>
+		</action>
+		<action name="browse" class="productAction" method="browse">
+			<result type="tiles">browse</result>
+		</action>
+		<action name="delete" class="productAction" method="delete">
+			<result type="redirect">browse.action</result>
+		</action>
+		<action name="update" class="productAction" method="update">
+			<result type="tiles">input</result>
+		</action>
+		<action name="detail" class="productAction" method="detail">
+			<exception-mapping result="productNotFound"
+				exception="product.ProductNotFoundException">
+			</exception-mapping>
+			<result type="tiles">detail</result>
+		</action>
+		<action name="photo" class="productAction"
+			method="getPhotoData">
+			<result type="stream">
+				<param name="contentType">image/jpg</param>
+				<param name="inputName">photoStream</param>
+				<param name="contentDisposition">
+					filename="product"
+				</param>
+				<param name="bufferSize">1024</param>
+			</result>
+		</action>
+	</package>
+</struts>
